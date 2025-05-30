@@ -1,441 +1,637 @@
- <!DOCTYPE html>
- <html>
+<!DOCTYPE html>
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Smart Carousel</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
 
-<body>
-   <section class="home" id="home">
+  <body>
+    <section class="home" id="home">
       <div class="container">
         <div class="navbar">
-          <div class="logo"><a href="#home">ABDULMEJID.</a></div>
+          <div class="logo"><a href="/">ABDULMEJID.</a></div>
           <nav id="navMenu">
-            <a href="#home">Home</a>
+            <a href="/">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#projects">Projects</a>
             <a href="#testimonial">Testimonial</a>
           </nav>
-          <a href="#contact"><button class="contact-btn nav-btn">Contact us</button></a>
+          <a href="#contact"
+            ><button class="contact-btn nav-btn">Contact us</button></a
+          >
           <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
         </div>
         <div class="header-description">
-          <h2>Get a Stunning Digital Product that Performs.</h2>
-          <p>Whether you're launching a startup or refreshing your brand, I'll help you stand out online and drive real results.</p>
+          <!-- <h2>Get a Stunning Digital Product that Performs.</h2> -->
+           <h2>Fast, Reliable and High-Converting Digital Products</h2>
+          <p>
+            Whether you're launching a startup or refreshing your brand, I'll
+            help you stand out online and drive real results.
+          </p>
+          <a href="#contact" class="hero-cta">
+            <i class="fas fa-paper-plane"></i> Contact Me
+          </a>
         </div>
         <div class="carousel" id="carousel">
-            <div class="carousel-wrapper">
-              <div class="slide-content"><img src="assets/project1.png" alt=""></div>
-              <div class="slide-content"><img src="assets/project2.png" alt=""></div>
-              <div class="slide-content"><img src="assets/project3.jpg" alt=""></div>
-              <div class="slide-content"><img src="assets/project4.png" alt=""></div>
-              <div class="slide-content"><img src="assets/project5.png" alt=""></div>
+          <div class="carousel-wrapper">
+            <div class="slide-content">
+              <img src="assets/project1.png" alt="" />
             </div>
-            <div class="controls">
-              <button class="home-arrow prev" onclick="prevSlide()"><i class="fas fa-chevron-left"></i></button>
-              <button class="home-arrow next" onclick="nextSlide()"><i class="fas fa-chevron-right"></i></button>
+            <div class="slide-content">
+              <img src="assets/project2.png" alt="" />
             </div>
+            <div class="slide-content">
+              <img src="assets/project3.jpg" alt="" />
+            </div>
+            <div class="slide-content">
+              <img src="assets/project4.png" alt="" />
+            </div>
+            <div class="slide-content">
+              <img src="assets/project5.png" alt="" />
+            </div>
+          </div>
+          <div class="controls">
+            <button class="home-arrow prev" onclick="prevSlide()">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="home-arrow next" onclick="nextSlide()">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
         </div>
-        
-        
-    </div>
-  </section>
-  
-  <main>
-        <div class="slider" style="
-            --width: 200px;
-            --height: 100px;
-            --quantity: 10;
-        ">
-            <div class="list">
-              <div class="item" style="--position: 1"><img src="images/coinx.png" alt=""></div>
-              <div class="item" style="--position: 2"><img src="images/growlly.png" alt=""></div>
-              <div class="item" style="--position: 3"><img src="images/meta.png" alt=""></div>
-              <div class="item" style="--position: 4"><img src="images/spuls.png" alt=""></div>
-              <div class="item" style="--position: 5"><img src="images/mounter.png" alt=""></div>
-              <div class="item" style="--position: 6"><img src="images/upper.png" alt=""></div>
-              <div class="item" style="--position: 7"><img src="images/starzone.png" alt=""></div>
-              <div class="item" style="--position: 8"><img src="images/greenleaf.png" alt=""></div>
-              <div class="item" style="--position: 9"><img src="images/dribbble.svg" alt=""></div>
-              <div class="item" style="--position: 10"><img src="images/lundev.png" alt=""></div>
-            </div>
+      </div>
+    </section>
+
+    <main>
+      <div
+        class="slider"
+        style="--width: 200px; --height: 100px; --quantity: 10"
+      >
+        <div class="list">
+          <div class="item" style="--position: 1">
+            <img src="images/coinx.png" alt="" />
+          </div>
+          <div class="item" style="--position: 2">
+            <img src="images/growlly.png" alt="" />
+          </div>
+          <div class="item" style="--position: 3">
+            <img src="images/meta.png" alt="" />
+          </div>
+          <div class="item" style="--position: 4">
+            <img src="images/spuls.png" alt="" />
+          </div>
+          <div class="item" style="--position: 5">
+            <img src="images/mounter.png" alt="" />
+          </div>
+          <div class="item" style="--position: 6">
+            <img src="images/upper.png" alt="" />
+          </div>
+          <div class="item" style="--position: 7">
+            <img src="images/starzone.png" alt="" />
+          </div>
+          <div class="item" style="--position: 8">
+            <img src="images/greenleaf.png" alt="" />
+          </div>
+          <div class="item" style="--position: 9">
+            <img src="images/dribbble.svg" alt="" />
+          </div>
+          <div class="item" style="--position: 10">
+            <img src="images/lundev.png" alt="" />
+          </div>
         </div>
-  </main>
- 
-<section class="about-section" id="about">
-    <div class="section-header">
-        <h2>About Me</h2>
-        <p>Get to know the person behind the work</p>
-    </div>
-    
-    <div class="book-layout">
-        <!-- Left Page (Profile) -->
-        <div class="book-page left-page">
+      </div>
+    </main>
+
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2>About Me</h2>
+          <p>Get to know the person behind the work</p>
+        </div>
+
+        <div class="book-layout">
+          <!-- Left Page (Profile) -->
+          <div class="book-page left-page">
             <div class="profile-content">
-                <div class="profile-image">
-                    <!-- Replace with your actual image -->
-                    <!-- <div class="placeholder">
+              <div class="profile-image">
+                <!-- Replace with your actual image -->
+                <!-- <div class="placeholder">
                         <i class="fas fa-user"></i>
                     </div> -->
-                    <img src="assets/profile1.jpg" alt="Abdulmejid">
+                <img src="assets/profile1.jpg" alt="Abdulmejid" />
+              </div>
+
+              <div class="profile-info">
+                <h3>Abdulmejid Sultan</h3>
+                <p class="experience">UI/UX Designer & Web Developer</p>
+                <div class="stars">
+                  <span>★★★★★</span>
+                  <span class="rating">5.0 Rating</span>
                 </div>
-                
-                <div class="profile-info">
-                    <h3>Abdulmejid Sultan</h3>
-                    <p class="experience">UI/UX Designer & Web Developer</p>
-                    <div class="stars">
-                        <span>★★★★★</span>
-                        <span class="rating">5.0 Rating</span>
-                    </div>
-                </div>
-                
-                <div class="skills">
-                    <h4>Skills</h4>
-                    <ul>
-                        <li><i class="fas fa-check-circle"></i> User Interface Design</li>
-                        <li><i class="fas fa-check-circle"></i> User Experience Research</li>
-                        <li><i class="fas fa-check-circle"></i> Frontend Development</li>
-                        <li><i class="fas fa-check-circle"></i> Fullstack Development</li>
-                        <li><i class="fas fa-check-circle"></i> Digital Marketing</li>
-                    </ul>
-                </div>
-                
-                <a href="#contact" class="contact-btn">
-                    <i class="fas fa-paper-plane"></i> Contact Me
-                </a>
+              </div>
+
+              <div class="skills">
+                <h4>Skills</h4>
+                <ul>
+                  <li>
+                    <i class="fas fa-check-circle"></i> User Interface Design
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> User Experience Research
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Frontend Development
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Fullstack Development
+                  </li>
+                  <li><i class="fas fa-check-circle"></i> Digital Marketing</li>
+                </ul>
+              </div>
+
+              <a href="#contact" class="about-cta">
+                <i class="fas fa-paper-plane"></i> Contact Me
+              </a>
             </div>
-        </div>
-        
-        <!-- Right Page (Description) -->
-        <div class="book-page right-page">
+          </div>
+
+          <!-- Right Page (Description) -->
+          <div class="book-page right-page">
             <div class="about-content">
-                <h3 class="content-title">Professional Overview</h3>
-                <p>I’m a Software Architect and Senior Web Developer with over 3 years of experience delivering professional web and mobile projects. Based in Adama, Ethiopia, I specialize in crafting high-performing, visually engaging, and conversion-focused digital experiences.</p> 
-                  <p>I’ve successfully completed 100+ projects for startups, agencies, and enterprise clients — transforming complex ideas into user-centric, scalable solutions. From UI/UX design to full-stack development, my mission is to build products that not only work flawlessly but also drive measurable impact.</p>
-                <div class="highlight-box">
-                    <i class="fas fa-lightbulb"></i>
-                    <p>Currently accepting new projects for 2025</p>
-                </div>
-                
-                <div class="quote">
-                    <p>"Establishing your online presence isn't just a strategy — it's survival."</p>
-                    <p class="author">- Me</p>
-                </div>
+              <h3 class="content-title">Professional Overview</h3>
+              <p>
+                I’m a Software Architect and Senior Web Developer with over 3
+                years of experience delivering professional web and mobile
+                projects. Based in Adama, Ethiopia, I specialize in crafting
+                high-performing, visually engaging, and conversion-focused
+                digital experiences.
+              </p>
+              <p>
+                I’ve successfully completed 100+ projects for startups,
+                agencies, and enterprise clients — transforming complex ideas
+                into user-centric, scalable solutions. From UI/UX design to
+                full-stack development, my mission is to build products that not
+                only work flawlessly but also drive measurable impact.
+              </p>
+              <div class="highlight-box">
+                <i class="fas fa-lightbulb"></i>
+                <p>Currently accepting new projects for 2025</p>
+              </div>
+
+              <div class="quote">
+                <p>
+                  "Establishing your online presence isn't just a strategy —
+                  it's survival."
+                </p>
+                <p class="author">- Me</p>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
-<div class="services-section" id="services">
-    <div class="container">
-      <div class="section-header">
-        <h2>My Services</h2>
-        <p>I offer comprehensive digital solutions tailored to your business</p>
       </div>
-    
-    <div class="services-container">
-        <!-- Service Card 1 -->
-        <div class="service-card" style="--card-color: #e3f2fd;">
+    </section>
+    <div class="services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2>My Services</h2>
+          <p>
+            I offer comprehensive digital solutions tailored to your business
+          </p>
+        </div>
+
+        <div class="services-container">
+          <!-- Service Card 1 -->
+          <div class="service-card" style="--card-color: #e3f2fd">
             <div class="service-icon">
-                <i class="fas fa-paint-brush"></i>
+              <i class="fas fa-paint-brush"></i>
             </div>
             <h3>UI/UX Designer</h3>
             <div class="service-description">
-                <!-- <h4 class="description-title">UI/UX Designer</h4> -->
-                <p>Creating intuitive and visually appealing user experiences that engage and delight your audience.</p>
+              <!-- <h4 class="description-title">UI/UX Designer</h4> -->
+              <p>
+                Creating intuitive and visually appealing user experiences that
+                engage and delight your audience.
+              </p>
             </div>
-        </div>
-        
-        <!-- Service Card 2 -->
-        <div class="service-card" style="--card-color: #e8f5e9;">
+          </div>
+
+          <!-- Service Card 2 -->
+          <div class="service-card" style="--card-color: #e8f5e9">
             <div class="service-icon">
-                <i class="fas fa-code"></i>
+              <i class="fas fa-code"></i>
             </div>
             <h3>Web Development</h3>
             <div class="service-description">
-                <!-- <h4 class="description-title">Web Development</h4> -->
-                <p>Building responsive, fast, and secure websites with clean, maintainable code.</p>
+              <!-- <h4 class="description-title">Web Development</h4> -->
+              <p>
+                Building responsive, fast, and secure websites with clean,
+                maintainable code.
+              </p>
             </div>
-        </div>
-        
-        <!-- Service Card 3 -->
-        <div class="service-card" style="--card-color: #fff8e1;">
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="service-card" style="--card-color: #fff8e1">
             <div class="service-icon">
-                <i class="fas fa-mobile-alt"></i>
+              <i class="fas fa-mobile-alt"></i>
             </div>
             <h3>Mobile Development</h3>
             <div class="service-description">
-                <!-- <h4 class="description-title">Mobile App Development</h4> -->
-                <p>Crafting mobile interfaces that provide flawless interaction across all devices.</p>
+              <!-- <h4 class="description-title">Mobile App Development</h4> -->
+              <p>
+                Crafting mobile interfaces that provide flawless interaction
+                across all devices.
+              </p>
             </div>
-        </div>
-        
-        <!-- Service Card 4 -->
-        <div class="service-card" style="--card-color: #f3e5f5;">
+          </div>
+
+          <!-- Service Card 4 -->
+          <div class="service-card" style="--card-color: #f3e5f5">
             <div class="service-icon">
-                <i class="fas fa-envelope"></i>
+              <i class="fas fa-envelope"></i>
             </div>
             <h3>Email Marketing</h3>
             <div class="service-description">
-                <!-- <h4 class="description-title">Email Marketing</h4> -->
-                <p>Crafting effective email campaigns that drive engagement and increase conversions.</p>
+              <!-- <h4 class="description-title">Email Marketing</h4> -->
+              <p>
+                Crafting effective email campaigns that drive engagement and
+                increase conversions.
+              </p>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-    </div>
-</div>
     <section class="projects-section" id="projects">
-  <div class="container">
-    <div class="section-header">
-      <h2>My Projects</h2>
-      <p >Selected works that showcase my design and development skills</p>
-    </div>
-    
-    <div class="projects-filter">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="ui-ux">UI/UX Design</button>
-      <button class="filter-btn" data-filter="web-dev">Web Development</button>
-      <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
-    </div>
-    
-    <div class="projects-grid">
-  <!-- Project 1: AI SaaS Website -->
-  <div class="project-card" data-category="ui-ux">
-    <div class="project-image" style="background: linear-gradient(45deg, #e0f7fa, #fce4ec);">
-      <img src="assets/project1.png" alt="AI SaaS Website Design" class="project-img">
-      <div class="project-overlay">
-        <a href="assets/project1.png" class="view-btn">View Case Study</a>
-      </div>
-    </div>
-    <div class="project-info">
-      <h3>AI-Powered SaaS Website</h3>
-      <p class="project-description">Landing page and dashboard UI for an AI-powered SaaS tool</p>
-      <div class="project-tags">
-        <span>UI/UX</span>
-        <span>Web Design</span>
-        <span>Figma</span>
-      </div>
-    </div>
-  </div>
+      <div class="container">
+        <div class="section-header">
+          <h2>My Projects</h2>
+          <p>Selected works that showcase my design and development skills</p>
+        </div>
 
-  <!-- Project 2: Food Ordering Website -->
-  <div class="project-card" data-category="web-dev">
-    <div class="project-image" style="background: linear-gradient(45deg, #fffde7, #f3e5f5);">
-      <img src="assets/food-del.png" alt="Food Ordering Website" class="project-img">
-      <div class="project-overlay">
-        <a href="https://food-delivery-frontend-2tyk.onrender.com/" class="view-btn">View Live Site</a>
-      </div>
-    </div>
-    <div class="project-info">
-      <h3>Food Ordering Website</h3>
-      <p class="project-description">Responsive food ordering platform with cart and checkout features</p>
-      <div class="project-tags">
-        <span>React</span>
-        <span>TailwindCSS</span>
-        <span>nodeJs</span>
-      </div>
-    </div>
-  </div>
+        <div class="projects-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="ui-ux">UI/UX Design</button>
+          <button class="filter-btn" data-filter="web-dev">
+            Web Development
+          </button>
+          <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+        </div>
 
-  <!-- Project 3: Fintech Website -->
-  <div class="project-card" data-category="ui-ux">
-    <div class="project-image" style="background: linear-gradient(45deg, #f3e5f5, #e8f5e9);">
-      <img src="assets/project2.png" alt="Fintech Website Design" class="project-img">
-      <div class="project-overlay">
-        <a href="assets/project2.png" class="view-btn">View Case Study</a>
-      </div>
-    </div>
-    <div class="project-info">
-      <h3>Fintech Website Design</h3>
-      <p class="project-description">UI design for a digital banking platform with secure login and insights</p>
-      <div class="project-tags">
-        <span>UI Design</span>
-        <span>Figma</span>
-        <span>Design Systems</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 4: Grocery Mobile App -->
-  <div class="project-card" data-category="mobile">
-    <div class="project-image" style="background: linear-gradient(45deg, #ede7f6, #e3f2fd);">
-      <img src="assets/mobile-app.png" alt="Grocery App" class="project-img">
-      <div class="project-overlay">
-        <a href="assets/mobile-app.png" class="view-btn">View Prototype</a>
-      </div>
-    </div>
-    <div class="project-info">
-      <h3>Grocery Ordering App</h3>
-      <p class="project-description">Mobile app design for quick grocery delivery with smart UX</p>
-      <div class="project-tags">
-        <span>Mobile UI</span>
-        <span>Adobe XD</span>
-        <span>User Flows</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 5: Dashboard -->
-  <div class="project-card" data-category="web-dev">
-    <div class="project-image" style="background: linear-gradient(45deg, #e3f2fd, #fce4ec);">
-      <img src="assets/dashboard.png" alt="Dashboard Development" class="project-img">
-      <div class="project-overlay">
-        <a href="assets/dashboard.png" class="view-btn">View Demo</a>
-      </div>
-    </div>
-    <div class="project-info">
-      <h3>Dashboard Development</h3>
-      <p class="project-description">Data-rich admin panel built with reusable components and charts</p>
-      <div class="project-tags">
-        <span>React</span>
-        <span>Chart.js</span>
-        <span>API Integration</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 6: Real Estate Website Design -->
-<div class="project-card" data-category="ui-ux">
-  <div class="project-image" style="background: linear-gradient(45deg, #fff3e0, #e1f5fe);">
-    <img src="assets/project4.png" alt="Real Estate Website Design" class="project-img">
-    <div class="project-overlay">
-      <a href="assets/project4.png" class="view-btn">View Case Study</a>
-    </div>
-  </div>
-  <div class="project-info">
-    <h3>Real Estate Website Design</h3>
-    <p class="project-description">Modern property listing UI with intuitive filters, map integration, and clean layout</p>
-    <div class="project-tags">
-      <span>UI Design</span>
-      <span>UX Strategy</span>
-      <span>Figma</span>
-    </div>
-  </div>
-</div>
-</div>
-    
-    <div class="view-more">
-      <a href="#" class="btn-primary">View All Projects</a>
-    </div>
-  </div>
-</section>
-   
-<section class="testimonials-section" id="testimonial">
-  <div class="container">
-    <div class="section-header">
-      <h2 >Client Testimonials</h2>
-      <p >What people say about my work</p>
-    </div>
-    
-
-    <div class="testimonial-carousel">
-      <button class="carousel-arrow prev" aria-label="Previous testimonials">
-        <i class="fas fa-chevron-left"></i>
-      </button>
-
-      <div class="testimonial-track" id="track">
-       
-      </div>
-
-      <button class="carousel-arrow next" aria-label="Next testimonials">
-        <i class="fas fa-chevron-right"></i>
-      </button>
-    </div>
-  </div>
-</section>
-<section class="contact-section" id="contact">
-  <div class="container">
-    <div class="section-header">
-      <h2>Get In Touch</h2>
-      <p>Available for freelance projects and full-time opportunities</p>
-    </div>
-    
-    <div class="contact-platforms">
-      <!-- Upwork Card -->
-      <a href="https://www.upwork.com/freelancers/~013ba4bf1ce3dd7505" target="_blank" class="platform-card">
-        <div class="platform-content-wrapper">
-          <div class="platform-icon" style="background: linear-gradient(135deg, #73bb44, #2d9d46);">
-            <i class="fab fa-upwork"></i>
+        <div class="projects-grid">
+          <!-- Project 1: AI SaaS Website -->
+          <div class="project-card" data-category="ui-ux">
+            <div
+              class="project-image"
+              style="background: linear-gradient(45deg, #e0f7fa, #fce4ec)"
+            >
+              <img
+                src="assets/project1.png"
+                alt="AI SaaS Website Design"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <a href="assets/project1.png" class="view-btn"
+                  >View Case Study</a
+                >
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>AI-Powered SaaS Website</h3>
+              <p class="project-description">
+                Landing page and dashboard UI for an AI-powered SaaS tool
+              </p>
+              <div class="project-tags">
+                <span>UI/UX</span>
+                <span>Web Design</span>
+                <span>Figma</span>
+              </div>
+            </div>
           </div>
-          <div class="platform-content">
-            <p>Hire me through Upwork for quick projects and long-term contracts </p>
-            <span class="platform-link">View Profile <i class="fas fa-arrow-right"></i></span>
-          </div>
-        </div>
-      </a>
-      
-      <!-- Fiverr Card -->
-      <a href="https://www.fiverr.com/abdu_mejid/buying?source=avatar_menu_profile" target="_blank" class="platform-card">
-        <div class="platform-content-wrapper">
-          <div class="platform-icon" style="background: linear-gradient(135deg, #1dbf73, #19a463);">
-            <i class="fab fa-fonticons-fi"></i>
-          </div>
-          <div class="platform-content">
-            <p>Browse my services on Fiverr for quick projects and fixed-price deliverables</p>
-            <span class="platform-link">View Profile <i class="fas fa-arrow-right"></i></span>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
 
-<footer class="footer-section">
-  <div class="container">
-    <div class="footer-content">
-      <div class="footer-brand">
-        <h3>Abdulmejid Sultan</h3>
-        <p class="footer-tagline">UI/UX Designer & Web Developer</p>
-        <div class="footer-social">
-          <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://www.upwork.com/freelancers/~013ba4bf1ce3dd7505" target="_blank" aria-label="Upwork"><i class="fab fa-upwork"></i></a>
-          <a href="https://www.fiverr.com/abdu_mejid/buying?source=avatar_menu_profile" target="_blank" aria-label="Fiverr"><i class="fab fa-fonticons-fi"></i></a>
-          <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <!-- Project 2: Food Ordering Website -->
+          <div class="project-card" data-category="web-dev">
+            <div
+              class="project-image"
+              style="background: linear-gradient(45deg, #fffde7, #f3e5f5)"
+            >
+              <img
+                src="assets/food-del.png"
+                alt="Food Ordering Website"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://food-delivery-frontend-2tyk.onrender.com/"
+                  class="view-btn"
+                  >View Live Site</a
+                >
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Food Ordering Website</h3>
+              <p class="project-description">
+                Responsive food ordering platform with cart and checkout
+                features
+              </p>
+              <div class="project-tags">
+                <span>React</span>
+                <span>TailwindCSS</span>
+                <span>nodeJs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Fintech Website -->
+          <div class="project-card" data-category="ui-ux">
+            <div
+              class="project-image"
+              style="background: linear-gradient(45deg, #f3e5f5, #e8f5e9)"
+            >
+              <img
+                src="assets/project2.png"
+                alt="Fintech Website Design"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <a href="assets/project2.png" class="view-btn"
+                  >View Case Study</a
+                >
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Fintech Website Design</h3>
+              <p class="project-description">
+                UI design for a digital banking platform with secure login and
+                insights
+              </p>
+              <div class="project-tags">
+                <span>UI Design</span>
+                <span>Figma</span>
+                <span>Design Systems</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Grocery Mobile App -->
+          <div class="project-card" data-category="mobile">
+            <div
+              class="project-image"
+              style="background: linear-gradient(45deg, #ede7f6, #e3f2fd)"
+            >
+              <img
+                src="assets/mobile-app.png"
+                alt="Grocery App"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <a href="assets/mobile-app.png" class="view-btn"
+                  >View Prototype</a
+                >
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Grocery Ordering App</h3>
+              <p class="project-description">
+                Mobile app design for quick grocery delivery with smart UX
+              </p>
+              <div class="project-tags">
+                <span>Mobile UI</span>
+                <span>Adobe XD</span>
+                <span>User Flows</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Dashboard -->
+          <div class="project-card" data-category="web-dev">
+            <div
+              class="project-image"
+              style="background: linear-gradient(45deg, #e3f2fd, #fce4ec)"
+            >
+              <img
+                src="assets/dashboard.png"
+                alt="Dashboard Development"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <a href="assets/dashboard.png" class="view-btn">View Demo</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Dashboard Development</h3>
+              <p class="project-description">
+                Data-rich admin panel built with reusable components and charts
+              </p>
+              <div class="project-tags">
+                <span>React</span>
+                <span>Chart.js</span>
+                <span>API Integration</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Real Estate Website Design -->
+          <div class="project-card" data-category="ui-ux">
+            <div
+              class="project-image"
+              style="background: linear-gradient(45deg, #fff3e0, #e1f5fe)"
+            >
+              <img
+                src="assets/project4.png"
+                alt="Real Estate Website Design"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <a href="assets/project4.png" class="view-btn"
+                  >View Case Study</a
+                >
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Real Estate Website Design</h3>
+              <p class="project-description">
+                Modern property listing UI with intuitive filters, map
+                integration, and clean layout
+              </p>
+              <div class="project-tags">
+                <span>UI Design</span>
+                <span>UX Strategy</span>
+                <span>Figma</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="view-more">
+          <a href="#contact" class="btn-primary">Let's Talk</a>
         </div>
       </div>
-      
-      <div class="footer-links">
-        <div class="links-column">
-          <h4>Navigation</h4>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#testimonial">Testimonial</a></li>
-          </ul>
+    </section>
+
+    <section class="testimonials-section" id="testimonial">
+      <div class="container">
+        <div class="section-header">
+          <h2>Client Testimonials</h2>
+          <p>What people say about my work</p>
         </div>
-        
-        <div class="links-column">
-          <h4>Services</h4>
-          <ul>
-            <li>UI/UX Design</li>
-            <li>Web Development</li>
-            <li>Mobile Design</li>
-            <li>Consulting</li>
-          </ul>
-        </div>
-        
-        <div class="links-column">
-          <h4>Legal</h4>
-          <ul>
-            <li>Privacy Policy</li>
-            <li>Terms of Service</li>
-            <li>Cookie Policy</li>
-          </ul>
+
+        <div class="testimonial-carousel">
+          <button
+            class="carousel-arrow prev"
+            aria-label="Previous testimonials"
+          >
+            <i class="fas fa-chevron-left"></i>
+          </button>
+
+          <div class="testimonial-track" id="track"></div>
+
+          <button class="carousel-arrow next" aria-label="Next testimonials">
+            <i class="fas fa-chevron-right"></i>
+          </button>
         </div>
       </div>
-    </div>
-    
-    <div class="footer-bottom">
-      <p>&copy; <span id="current-year"></span> Abdulmejid Sultan. All rights reserved.</p>
-    </div>
-  </div>
-</footer>
-  
-  <script src="script.js"></script>
-</body>
-</html> 
+    </section>
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Get In Touch</h2>
+          <p>Available for freelance projects and full-time opportunities</p>
+        </div>
 
+        <div class="contact-platforms">
+          <!-- Upwork Card -->
+          <a
+            href="https://www.upwork.com/freelancers/~013ba4bf1ce3dd7505"
+            target="_blank"
+            class="platform-card"
+          >
+            <div class="platform-content-wrapper">
+              <div
+                class="platform-icon"
+                style="background: linear-gradient(135deg, #73bb44, #2d9d46)"
+              >
+                <i class="fab fa-upwork"></i>
+              </div>
+              <div class="platform-content">
+                <p>
+                  Hire me through Upwork for quick projects and long-term
+                  contracts
+                </p>
+                <span class="platform-link"
+                  >View Profile <i class="fas fa-arrow-right"></i
+                ></span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Fiverr Card -->
+          <a
+            href="https://www.fiverr.com/abdu_mejid/buying?source=avatar_menu_profile"
+            target="_blank"
+            class="platform-card"
+          >
+            <div class="platform-content-wrapper">
+              <div
+                class="platform-icon"
+                style="background: linear-gradient(135deg, #1dbf73, #19a463)"
+              >
+                <i class="fab fa-fonticons-fi"></i>
+              </div>
+              <div class="platform-content">
+                <p>
+                  Browse my services on Fiverr for quick projects and
+                  fixed-price deliverables
+                </p>
+                <span class="platform-link"
+                  >View Profile <i class="fas fa-arrow-right"></i
+                ></span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>Abdulmejid Sultan</h3>
+            <p class="footer-tagline">UI/UX Designer & Web Developer</p>
+            <div class="footer-social">
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://www.upwork.com/freelancers/~013ba4bf1ce3dd7505"
+                target="_blank"
+                aria-label="Upwork"
+                ><i class="fab fa-upwork"></i
+              ></a>
+              <a
+                href="https://www.fiverr.com/abdu_mejid/buying?source=avatar_menu_profile"
+                target="_blank"
+                aria-label="Fiverr"
+                ><i class="fab fa-fonticons-fi"></i
+              ></a>
+              <a href="https://github.com/" target="_blank" aria-label="GitHub"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <div class="links-column">
+              <h4>Navigation</h4>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+              </ul>
+            </div>
+
+            <div class="links-column">
+              <h4>Services</h4>
+              <ul>
+                <li>UI/UX Design</li>
+                <li>Web Development</li>
+                <li>Mobile Design</li>
+                <li>Consulting</li>
+              </ul>
+            </div>
+
+            <div class="links-column">
+              <h4>Legal</h4>
+              <ul>
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+                <li>Cookie Policy</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="current-year"></span> Abdulmejid Sultan. All rights
+            reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
